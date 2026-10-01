@@ -1,165 +1,1126 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="contenedor contenido-header">
-        <div class="barra">
-          <div class="logo">
-            <h1 class="nombre-sitio">Arquitectura<span>Bosque</span></h1>
-          </div>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arquitectura Bosque | Estudio de Arquitectura & Residencias Sustentables</title>
+  <meta name="description" content="Diseño y construcción de residencias exclusivas en armonía con el entorno natural. Arquitectura bioclimática, maderas nobles y confort contemporáneo en el sur." />
 
-          <div class="contacto">
-            <a class="telefono" href="tel:01-800-0000-000">01-800-0000-000</a>
+  <!-- Google Fonts: Cinzel & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
-            <nav class="navegacion">
-              <a class="link" href="#">Inicio</a>
-              <a class="link" href="#">Nosotros</a>
-              <a class="link" href="#">Modelo</a>
-              <a class="link" href="#">Galeria</a>
-              <a class="link" href="#">Contacto</a>
-            </nav>
-          </div>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-badge">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>Certificación Bioclimática & Eficiencia Térmica A+ Garantizada</span>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:01-800-0000-000">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>Línea Directa: 01-800-0000-000</span>
+        </a>
+        <a href="#contacto">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <span>Santiago & Región de Los Lagos</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 22 22 22"/>
+            <line x1="12" y1="2" x2="12" y2="22"/>
+            <line x1="7" y1="12" x2="17" y2="12"/>
+          </svg>
         </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Arquitectura <span>Bosque</span></h1>
+          <span class="brand-tagline">Estudio de Diseño Sustentable</span>
+        </div>
+      </a>
 
-        <div class="slogan">
-          <h2>Tu casa en el bosque</h2>
-          <p>Costruimos la casa de tus sueños</p>
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav">
+        <a href="#" class="nav-link">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#modelos" class="nav-link">Modelos</a>
+        <a href="#cotizador" class="nav-link">Cotizador</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="tel:01-800-0000-000" class="phone-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>01-800-0000-000</span>
+        </a>
+        <a href="#contacto" class="btn-primary">
+          <span>Agendar Visita</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <button id="menuToggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside id="navDrawer" class="nav-drawer" aria-label="Menú Móvil">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 22 22 22"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">Arquitectura <span>Bosque</span></span>
         </div>
       </div>
-    </header>
+      <button id="closeDrawer" class="drawer-close" aria-label="Cerrar Menú">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#" class="nav-link">Inicio</a>
+      <a href="#nosotros" class="nav-link">Sobre Nosotros</a>
+      <a href="#modelos" class="nav-link">Nuestros Modelos</a>
+      <a href="#cotizador" class="nav-link">Cotizador de Proyecto</a>
+      <a href="#galeria" class="nav-link">Galería de Obras</a>
+      <a href="#contacto" class="nav-link">Contacto & Cita</a>
+    </div>
+    <div class="drawer-footer">
+      <a href="tel:01-800-0000-000" class="btn-secondary" style="width: 100%;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span>Llamar: 01-800-0000-000</span>
+      </a>
+      <a href="#contacto" class="btn-primary" style="width: 100%;">Agendar Cita en Terreno</a>
+    </div>
+  </aside>
 
-    <section class="contenedor mt-5 nosotros">
-      <div class="contenido-nosotros">
-        <h2>Sobre Nosotros</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetura adipisicing elit. Facere
-          minima rerum, neque vel quisquam voluptatem eius fuga, sit, optio
-          quibusdam non? Neque quaerat error deleniti amet consectetur.
-          Distinctio odit rem quod sed.
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <span>Estudio de Diseño & Construcción Sustentable</span>
+        </div>
+        <h2 class="hero-title">Tu Refugio en el Bosque: <span>Arquitectura</span> que Dialoga con la Naturaleza</h2>
+        <p class="hero-desc">
+          Diseñamos y construimos residencias de autor integradas armónicamente al entorno boscoso. Fusionamos maderas nativas certificadas, piedra volcánica, aislamiento térmico de vanguardia y grandes ventanales panorámicos.
         </p>
+        <div class="hero-actions">
+          <a href="#modelos" class="btn-primary">
+            <span>Explorar Modelos</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="#cotizador" class="btn-outline-light">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+              <line x1="8" y1="6" x2="16" y2="6"></line>
+              <line x1="16" y1="14" x2="16" y2="18"></line>
+              <path d="M16 10h.01"></path>
+              <path d="M12 10h.01"></path>
+              <path d="M8 10h.01"></path>
+              <path d="M12 14h.01"></path>
+              <path d="M8 14h.01"></path>
+              <path d="M12 18h.01"></path>
+              <path d="M8 18h.01"></path>
+            </svg>
+            <span>Cotizador de Proyecto</span>
+          </a>
+        </div>
 
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam,
-          quaerat nobis harum laboriosam quos blanditiis quas pariatur saepe
-          placeat ea facilis iusto!
-        </p>
-      </div>
-    </section>
-
-    <main class="contenedor mt-5">
-      <h2>Conoce nuestros 3 modelos</h2>
-
-      <div class="modelo basico">
-        <div class="contenido-modelo">
-          <h3>Modelo Basico</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            voluptates dolor harum eligendi minus! Quam enim odio praesentium
-            veniam dolorum accusamus, iure nulla est atque incidunt non sapiente
-            facere earum.
-          </p>
-          <a href="#" class="btn">Mas informacion</a>
-        </div>
-      </div>
-      <!--Aqui finaliza el modelo-->
-
-      <div class="modelo premier">
-        <div class="contenido-modelo">
-          <h3>Modelo Premier</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            voluptates dolor harum eligendi minus! Quam enim odio praesentium
-            veniam dolorum accusamus, iure nulla est atque incidunt non sapiente
-            facere earum.
-          </p>
-          <a href="#" class="btn">Mas informacion</a>
-        </div>
-      </div>
-      <!--Aqui finaliza el modelo-->
-
-      <div class="modelo elite">
-        <div class="contenido-modelo">
-          <h3>Modelo Elite</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            voluptates dolor harum eligendi minus! Quam enim odio praesentium
-            veniam dolorum accusamus, iure nulla est atque incidunt non sapiente
-            facere earum.
-          </p>
-          <a href="#" class="btn">Mas informacion</a>
-        </div>
-      </div>
-      <!--Aqui finaliza el modelo-->
-    </main>
-
-    <section class="contenedor mt-5">
-      <h2>Galeria</h2>
-      <div class="galeria">
-        <div class="imagen">
-          <img src="assets/img/imagen_1.jpg" alt="imagen 1 galeria" />
-        </div>
-        <div class="imagen">
-          <img src="assets/img/imagen_2.jpg" alt="imagen 2 galeria" />
-        </div>
-        <div class="imagen">
-          <img src="assets/img/imagen_3.jpg" alt="imagen 3 galeria" />
-        </div>
-        <div class="imagen">
-          <img src="assets/img/imagen_4.jpg" alt="imagen 4 galeria" />
-        </div>
-        <div class="imagen">
-          <img src="assets/img/imagen_5.jpg" alt="imagen 5 galeria" />
-        </div>
-        <div class="imagen">
-          <img src="assets/img/imagen_6.jpg" alt="imagen 6 galeria" />
-        </div>
-        <div class="imagen">
-          <img src="assets/img/imagen_7.jpg" alt="imagen 7 galeria" />
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer mt-5">
-      <div class="contenedor">
-        <div class="barra">
-          <div class="logo">
-            <h1 class="nombre-sitio">Arquitectura<span>Bosque</span></h1>
+        <!-- Architectural Key Metrics -->
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <div class="metric-number">15<span>+</span></div>
+            <div class="metric-label">Años de Trayectoria en Arquitectura</div>
           </div>
-
-          <div class="contacto">
-            <a class="telefono" href="tel:01-800-0000-000">01-800-0000-000</a>
-
-            <nav class="navegacion">
-              <a class="link" href="#">Inicio</a>
-              <a class="link" href="#">Nosotros</a>
-              <a class="link" href="#">Modelo</a>
-              <a class="link" href="#">Galeria</a>
-              <a class="link" href="#">Contacto</a>
-            </nav>
+          <div class="metric-item">
+            <div class="metric-number">120<span>+</span></div>
+            <div class="metric-label">Casas de Autor Construidas</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">100<span>%</span></div>
+            <div class="metric-label">Materiales Nobles & Sustentables</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-number">A<span>+</span></div>
+            <div class="metric-label">Eficiencia Térmica & Bioclimática</div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>
-          Todos los derechos reservados &copy; Development By Jose Manuel
-          Perdomo
+    </div>
+  </section>
+
+  <!-- Section "Sobre Nosotros" (Filosofía & Concepto) -->
+  <section id="nosotros" class="section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-visual">
+          <div class="about-img-wrap">
+            <img src="assets/img/nosotros.jpg" alt="Estudio Arquitectura Bosque - Obras en el bosque" loading="lazy" />
+          </div>
+          <div class="about-badge-card">
+            <div class="about-badge-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="about-badge-title">Compromiso Sustentable</div>
+              <div class="about-badge-sub">Huella hídrica y de carbono compensada en cada obra ejecutada.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-content">
+          <div class="section-pretitle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 3"/>
+            </svg>
+            <span>Filosofía de Diseño</span>
+          </div>
+          <h2 class="section-title">Redefiniendo el Habitar en Armonía con el Bosque</h2>
+          <p class="about-lead">
+            No creemos en invadir el paisaje: nuestras obras emergen de él, respetando cada árbol, pendiente y curso de agua natural.
+          </p>
+          <p class="about-paragraph">
+            Fundada bajo el principio de la arquitectura bioclimática, en <strong>Arquitectura Bosque</strong> creamos refugios contemporáneos diseñados para durar generaciones. Combinamos la calidez de la madera nativa tratada con la resistencia del acero estructural y grandes vanos acristalados que introducen el bosque al interior de cada hogar.
+          </p>
+
+          <!-- 3 Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                </svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Bioclimatismo Activo</h4>
+                <p>Estudios solares de precisión y ventilación cruzada para maximizar el confort térmico todo el año sin sobrecostos de energía.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                </svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Materialidad Noble & Local</h4>
+                <p>Pino Oregón secado en cámara, basamentos de piedra volcánica local y cerramientos de alta eficiencia térmica.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"/>
+                  <line x1="12" y1="1" x2="12" y2="3"/>
+                  <line x1="12" y1="21" x2="12" y2="23"/>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                  <line x1="1" y1="12" x2="3" y2="12"/>
+                  <line x1="21" y1="12" x2="23" y2="12"/>
+                </svg>
+              </div>
+              <div class="pillar-info">
+                <h4>Preparación Off-Grid</h4>
+                <p>Canalización subterránea para sistemas solares fotovoltaicos, respaldo de agua lluvia y calefacción limpia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="#modelos" class="btn-primary">
+              <span>Conoce Nuestras Tipologías</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section "Nuestros 3 Modelos Residenciales" -->
+  <section id="modelos" class="section-padding models-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <line x1="3" y1="9" x2="21" y2="9"/>
+            <line x1="9" y1="21" x2="9" y2="9"/>
+          </svg>
+          <span>Colección Residencial 2026</span>
+        </div>
+        <h2 class="section-title">Conoce Nuestros 3 Modelos de Autor</h2>
+        <p class="section-desc">
+          Tres tipologías arquitectónicas modulares y adaptables a la topografía de tu terreno. Máximo aprovechamiento de la luz, calidez natural y eficiencia energética superior.
         </p>
       </div>
-    </footer>
-  </body>
+
+      <!-- Filter Buttons -->
+      <div class="models-filter-bar">
+        <button class="model-filter-btn active" data-filter="all">Todos los Modelos</button>
+        <button class="model-filter-btn" data-filter="basico">Modelo Básico (140 m²)</button>
+        <button class="model-filter-btn" data-filter="premier">Modelo Premier (210 m²)</button>
+        <button class="model-filter-btn" data-filter="elite">Modelo Elite (320 m²)</button>
+      </div>
+
+      <!-- Models Grid Cards -->
+      <div class="models-grid">
+
+        <!-- 1. MODELO BASICO -->
+        <article class="model-card" data-category="basico">
+          <div class="model-media">
+            <img src="assets/img/modelo_basico.jpg" alt="Modelo Básico - Arquitectura Bosque" loading="lazy" />
+            <div class="model-tag-badge">Tipología Compacta & Eficiente</div>
+            <div class="model-price-badge">
+              <span>Inversión desde</span>
+              $85.000 USD
+            </div>
+          </div>
+          <div class="model-info">
+            <div class="model-category-label">Línea Refugio Esencial</div>
+            <h3 class="model-name">Modelo Básico</h3>
+            <p class="model-summary">
+              Concebido como un refugio de fin de semana o primera vivienda sustentable. Su distribución compacta optimiza la calefacción y prioriza una gran sala integrada con vistas panorámicas hacia el bosque nativo.
+            </p>
+
+            <!-- Technical Specs Grid -->
+            <div class="model-specs-grid">
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Superficie</span>
+                  <span class="spec-val">140 m² construidos</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Dormitorios</span>
+                  <span class="spec-val">2 Dormitorios (1 Suite)</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-2.12 0L2.88 5a1.5 1.5 0 0 0 0 2.12L4 8.24"/>
+                    <path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Baños</span>
+                  <span class="spec-val">2 Baños completos</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M2 12h20"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Terraza Deck</span>
+                  <span class="spec-val">35 m² voladiza</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="model-card-actions">
+              <button class="btn-primary open-model-modal" data-model="basico">
+                <span>Ver Ficha Técnica</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </button>
+              <a href="#cotizador" class="btn-secondary">Cotizar este Modelo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. MODELO PREMIER -->
+        <article class="model-card reversed" data-category="premier">
+          <div class="model-media">
+            <img src="assets/img/modelo_premier.jpg" alt="Modelo Premier - Arquitectura Bosque" loading="lazy" />
+            <div class="model-tag-badge">Residencia Familiar Equilibrada</div>
+            <div class="model-price-badge">
+              <span>Inversión desde</span>
+              $145.000 USD
+            </div>
+          </div>
+          <div class="model-info">
+            <div class="model-category-label">Línea Familiar Confort</div>
+            <h3 class="model-name">Modelo Premier</h3>
+            <p class="model-summary">
+              Una residencia espaciosa y elegante diseñada para habitar de forma permanente. Cuenta con doble altura en el salón principal, estudio independiente para teletrabajo y un deck exterior con fogón integrado en piedra volcánica.
+            </p>
+
+            <!-- Technical Specs Grid -->
+            <div class="model-specs-grid">
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Superficie</span>
+                  <span class="spec-val">210 m² construidos</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Dormitorios</span>
+                  <span class="spec-val">3 Dormitorios + Estudio</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-2.12 0L2.88 5a1.5 1.5 0 0 0 0 2.12L4 8.24"/>
+                    <path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Baños</span>
+                  <span class="spec-val">3 Baños de diseño</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M2 12h20"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Terraza Deck</span>
+                  <span class="spec-val">60 m² con fogón</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="model-card-actions">
+              <button class="btn-primary open-model-modal" data-model="premier">
+                <span>Ver Ficha Técnica</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </button>
+              <a href="#cotizador" class="btn-secondary">Cotizar este Modelo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. MODELO ELITE -->
+        <article class="model-card" data-category="elite">
+          <div class="model-media">
+            <img src="assets/img/modelo_elite.jpg" alt="Modelo Elite - Arquitectura Bosque" loading="lazy" />
+            <div class="model-tag-badge">High-End Luxury & Wellness</div>
+            <div class="model-price-badge">
+              <span>Inversión desde</span>
+              $220.000 USD
+            </div>
+          </div>
+          <div class="model-info">
+            <div class="model-category-label">Línea Signature Luxury</div>
+            <h3 class="model-name">Modelo Elite</h3>
+            <p class="model-summary">
+              La máxima expresión de sofisticación arquitectónica en la naturaleza. Integra sauna nórdico seco, cava subterránea de vinos, suites con terrazas voladizas privadas y sistemas domóticos integrales para climatización e iluminación.
+            </p>
+
+            <!-- Technical Specs Grid -->
+            <div class="model-specs-grid">
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Superficie</span>
+                  <span class="spec-val">320 m² construidos</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M2 4v16M2 8h18a2 2 0 0 1 2 2v10M2 17h20M6 8v9"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Dormitorios</span>
+                  <span class="spec-val">4 Suites Privadas</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-2.12 0L2.88 5a1.5 1.5 0 0 0 0 2.12L4 8.24"/>
+                    <path d="M4 12v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Baños</span>
+                  <span class="spec-val">4 Baños + Sauna Spa</span>
+                </div>
+              </div>
+
+              <div class="spec-item">
+                <div class="spec-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M2 12h20"/>
+                  </svg>
+                </div>
+                <div class="spec-details">
+                  <span class="spec-label">Terraza Deck</span>
+                  <span class="spec-val">95 m² doble nivel</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="model-card-actions">
+              <button class="btn-primary open-model-modal" data-model="elite">
+                <span>Ver Ficha Técnica</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+              </button>
+              <a href="#cotizador" class="btn-secondary">Cotizar este Modelo</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section "Cotizador / Calculadora Interactiva de Proyecto" -->
+  <section id="cotizador" class="section-padding calculator-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          <span>Herramienta Interactiva</span>
+        </div>
+        <h2 class="section-title">Estimador de Inversión de Proyecto</h2>
+        <p class="section-desc">
+          Configura la tipología de tu residencia, características del terreno y equipamiento sustentable para obtener una aproximación financiera y de plazo en tiempo real.
+        </p>
+      </div>
+
+      <div class="calculator-card">
+        <!-- Configuration Form -->
+        <div class="calc-form-wrap">
+          <h3>Personaliza tu Residencia</h3>
+
+          <div class="calc-group">
+            <label class="calc-label" for="calcModel">1. Selecciona el Modelo Base</label>
+            <select id="calcModel" class="calc-select">
+              <option value="basico">Modelo Básico (140 m² — 2 Dormitorios / 2 Baños)</option>
+              <option value="premier" selected>Modelo Premier (210 m² — 3 Dormitorios / 3 Baños / Estudio)</option>
+              <option value="elite">Modelo Elite (320 m² — 4 Suites / 4 Baños / Spa Sauna)</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label" for="calcTerrain">2. Topografía & Entorno del Terreno</label>
+            <select id="calcTerrain" class="calc-select">
+              <option value="plano">Terreno Regular / Pendiente Suave (0% - 10%)</option>
+              <option value="colina">Ladera de Montaña / Pendiente Media (10% - 25%) (+8% fundaciones)</option>
+              <option value="ribera">Ribera de Lago / Roca Viva o Humedal (+14% ingeniería de suelo)</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">3. Equipamiento Sustentable Adicional</label>
+            <div class="calc-checkboxes">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="calc-extra" value="9500">
+                <span>Paneles Solares Off-Grid (+ $9.500)</span>
+              </label>
+
+              <label class="custom-checkbox">
+                <input type="checkbox" class="calc-extra" value="7800">
+                <span>Calefacción Piso Radiante Aerotermia (+ $7.800)</span>
+              </label>
+
+              <label class="custom-checkbox">
+                <input type="checkbox" class="calc-extra" value="6200">
+                <span>Hot Tub Nórdico de Cedro Integrado (+ $6.200)</span>
+              </label>
+
+              <label class="custom-checkbox">
+                <input type="checkbox" class="calc-extra" value="5400">
+                <span>Ventanales Triple Vidrio Low-E (+ $5.400)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real-time Cost Breakdown Box -->
+        <div class="calc-results-wrap">
+          <div>
+            <div class="calc-results-header">
+              <h4>Resumen Estimado</h4>
+              <p>Valores referenciales calculados con estándar de construcción premium.</p>
+            </div>
+
+            <div class="calc-metrics-list">
+              <div class="calc-metric-row">
+                <span>Superficie Útil:</span>
+                <strong id="resultArea">210 m²</strong>
+              </div>
+              <div class="calc-metric-row">
+                <span>Plazo Estimado de Obra:</span>
+                <strong id="resultTime">8 Meses</strong>
+              </div>
+              <div class="calc-metric-row">
+                <span>Garantía Estructural:</span>
+                <strong>10 Años Certificada</strong>
+              </div>
+              <div class="calc-metric-row">
+                <span>Dirección de Obra:</span>
+                <strong>Incluida 100%</strong>
+              </div>
+            </div>
+
+            <div class="calc-total-box">
+              <div class="calc-total-label">Inversión Estimada Total</div>
+              <div class="calc-total-amount" id="resultCost">$145.000 USD</div>
+            </div>
+          </div>
+
+          <button id="calcTransferBtn" class="btn-primary" style="width: 100%; justify-content: center;">
+            <span>Solicitar Asesoría para este Presupuesto</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section "Galería de Obras" -->
+  <section id="galeria" class="section-padding gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-pretitle">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span>Registro Visual</span>
+        </div>
+        <h2 class="section-title">Galería de Obras & Espacios de Autor</h2>
+        <p class="section-desc">
+          Explora los detalles constructivos, volumetría exterior y la cálida atmósfera interior de nuestras residencias construidas en entornos de bosque nativo. Haz clic en cualquier imagen para ampliarla en alta definición.
+        </p>
+      </div>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="gallery-filter-bar">
+        <button class="gallery-filter-btn active" data-filter="all">Todos los Espacios</button>
+        <button class="gallery-filter-btn" data-filter="fachadas">Fachadas & Volumetría</button>
+        <button class="gallery-filter-btn" data-filter="interiores">Interiores & Salones</button>
+        <button class="gallery-filter-btn" data-filter="detalles">Materialidad & Detalles</button>
+      </div>
+
+      <!-- Bento Dynamic Gallery Grid (7 Authentic Images) -->
+      <div class="gallery-grid">
+
+        <!-- Image 1 -->
+        <div class="gallery-item" data-cat="fachadas">
+          <img src="assets/img/imagen_1.jpg" alt="Fachada y aleros en bosque nativo" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-card-tag">Fachadas</span>
+            <h4 class="gallery-card-title">Pabellón Bosque Niebla</h4>
+            <div class="gallery-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Huilo Huilo, Los Ríos</span>
+            </div>
+          </div>
+          <div class="gallery-expand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </div>
+        </div>
+
+        <!-- Image 2 (Large span) -->
+        <div class="gallery-item large-span" data-cat="interiores">
+          <img src="assets/img/imagen_2.jpg" alt="Gran salón con chimenea de piedra" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-card-tag">Interiores</span>
+            <h4 class="gallery-card-title">Gran Salón & Chimenea Volcánica</h4>
+            <div class="gallery-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Lago Villarrica, La Araucanía</span>
+            </div>
+          </div>
+          <div class="gallery-expand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="gallery-item" data-cat="fachadas">
+          <img src="assets/img/imagen_3.jpg" alt="Terraza deck y voladizo en madera" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-card-tag">Fachadas</span>
+            <h4 class="gallery-card-title">Deck Suspendido sobre el Sotobosque</h4>
+            <div class="gallery-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Puerto Varas, Los Lagos</span>
+            </div>
+          </div>
+          <div class="gallery-expand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="gallery-item" data-cat="interiores">
+          <img src="assets/img/imagen_4.jpg" alt="Cocina abierta integrada y luz natural" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-card-tag">Interiores</span>
+            <h4 class="gallery-card-title">Cocina Gourmet & Luz Cenital</h4>
+            <div class="gallery-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Curacaví, Región Metropolitana</span>
+            </div>
+          </div>
+          <div class="gallery-expand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="gallery-item" data-cat="detalles">
+          <img src="assets/img/imagen_5.jpg" alt="Ensamble de madera noble y cerramientos" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-card-tag">Materialidad</span>
+            <h4 class="gallery-card-title">Ensambles de Roble Reciclado</h4>
+            <div class="gallery-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Valdivia, Los Ríos</span>
+            </div>
+          </div>
+          <div class="gallery-expand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="gallery-item" data-cat="interiores">
+          <img src="assets/img/imagen_6.jpg" alt="Suite principal con ventanal panorámico" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-card-tag">Interiores</span>
+            <h4 class="gallery-card-title">Master Suite con Vistas al Dosel</h4>
+            <div class="gallery-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Pucón, La Araucanía</span>
+            </div>
+          </div>
+          <div class="gallery-expand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </div>
+        </div>
+
+        <!-- Image 7 -->
+        <div class="gallery-item" data-cat="detalles">
+          <img src="assets/img/imagen_7.jpg" alt="Acabados en piedra natural y hormigón visto" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-card-tag">Materialidad</span>
+            <h4 class="gallery-card-title">Piedra Volcánica & Hormigón Visto</h4>
+            <div class="gallery-card-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Frutillar, Los Lagos</span>
+            </div>
+          </div>
+          <div class="gallery-expand-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section "Contacto & Asesoría Personalizada" -->
+  <section id="contacto" class="section-padding">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info Left Column -->
+        <div class="contact-info-panel">
+          <div class="section-pretitle">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>Hablemos de tu Proyecto</span>
+          </div>
+          <h3>Iniciemos la Casa de tus Sueños</h3>
+          <p class="contact-info-desc">
+            Cada terreno tiene un alma propia. Te invitamos a reunirnos en nuestro estudio o coordinar una visita técnica a tu predio para evaluar la mejor implantación bioclimática y estimar tu presupuesto de construcción.
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="method-details">
+                <h5>Teléfono Directo de Estudio</h5>
+                <a href="tel:01-800-0000-000">01-800-0000-000</a>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div class="method-details">
+                <h5>Correo Electrónico de Proyectos</h5>
+                <a href="mailto:contacto@arquitecturabosque.cl">contacto@arquitecturabosque.cl</a>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="method-details">
+                <h5>Horario de Asesoría</h5>
+                <p>Lunes a Viernes: 09:00 - 18:30 hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="office-card">
+            <h5>Oficinas & Estudios Regionales</h5>
+            <p><strong>Santiago:</strong> Av. Vitacura 2939, Piso 8, Las Condes.<br /><strong>Sur de Chile:</strong> Costanera Vicente Pérez Rosales 1240, Puerto Varas.</p>
+          </div>
+        </div>
+
+        <!-- Contact Form Right Column -->
+        <div class="contact-form-panel">
+          <h3>Formulario de Consulta</h3>
+          <p>Completa tus datos y un arquitecto de nuestro equipo te contactará en menos de 24 horas hábiles.</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactoNombre">Nombre y Apellido *</label>
+                <input type="text" id="contactoNombre" class="form-input" placeholder="Ej. Camila Morales" required />
+              </div>
+              <div class="form-group">
+                <label for="contactoEmail">Correo Electrónico *</label>
+                <input type="email" id="contactoEmail" class="form-input" placeholder="nombre@correo.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactoTelefono">Teléfono o WhatsApp *</label>
+                <input type="tel" id="contactoTelefono" class="form-input" placeholder="+56 9 8765 4321" required />
+              </div>
+              <div class="form-group">
+                <label for="contactoModelo">Modelo de Interés</label>
+                <select id="contactoModelo" class="form-select">
+                  <option value="basico">Modelo Básico (140 m²)</option>
+                  <option value="premier" selected>Modelo Premier (210 m²)</option>
+                  <option value="elite">Modelo Elite (320 m²)</option>
+                  <option value="personalizado">Proyecto 100% Personalizado a Medida</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactoUbicacion">Localidad o Región del Terreno</label>
+              <input type="text" id="contactoUbicacion" class="form-input" placeholder="Ej. Pucón, Lago Ranco, Valdivia, Curacaví..." />
+            </div>
+
+            <div class="form-group">
+              <label for="contactoMensaje">Cuéntanos sobre tu Proyecto *</label>
+              <textarea id="contactoMensaje" class="form-textarea" placeholder="Describe los requerimientos de tu residencia, características de tu terreno o fechas estimadas para iniciar la construcción..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              <span>Enviar Solicitud de Proyecto</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-overlay"></div>
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="brand-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 2 22 22 22"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title" style="color: #ffffff;">Arquitectura <span>Bosque</span></span>
+            </div>
+          </div>
+          <p>
+            Estudio especializado en arquitectura bioclimática y construcción sustentable en entornos naturales protegidos. Honramos el paisaje mediante el diseño de vanguardia y la materialidad noble.
+          </p>
+          <div class="top-bar-badge" style="background: rgba(255,255,255,0.08); padding: 0.6rem 1.4rem; border-radius: 999px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>Certificación Verde Sello 2026</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Enlaces Rápidos -->
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#nosotros">Sobre el Estudio</a></li>
+            <li><a href="#modelos">Modelos Residenciales</a></li>
+            <li><a href="#cotizador">Cotizador Interactivo</a></li>
+            <li><a href="#galeria">Galería de Obras</a></li>
+            <li><a href="#contacto">Contacto & Asesoría</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Tipologías -->
+        <div class="footer-col">
+          <h4>Tipologías</h4>
+          <ul class="footer-links">
+            <li><a href="#modelos">Modelo Básico (140 m²)</a></li>
+            <li><a href="#modelos">Modelo Premier (210 m²)</a></li>
+            <li><a href="#modelos">Modelo Elite (320 m²)</a></li>
+            <li><a href="#contacto">Arquitectura a Medida</a></li>
+            <li><a href="#contacto">Estudios de Suelo & Topografía</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter -->
+        <div class="footer-col">
+          <h4>Catálogo & Novedades</h4>
+          <div class="newsletter-box">
+            <p>Recibe trimestralmente nuestro catálogo de planos arquitectónicos, renders conceptuales y avances de obra.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('¡Suscripción confirmada! Te enviaremos el catálogo digital.'); this.reset();">
+              <input type="email" class="newsletter-input" placeholder="Tu correo electrónico" required />
+              <button type="submit" class="btn-primary" style="padding: 1rem 1.8rem;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="copyright-bar">
+        <p>Todos los derechos reservados &copy; 2026 <strong>Arquitectura Bosque</strong>. Development By <span>Jose Manuel Perdomo</span></p>
+        <p>Santiago &bull; Región de Los Lagos &bull; Chile</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Ficha Técnica de Modelos -->
+  <div id="modelModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle">Modelo</h3>
+          <p id="modalSubtitle">Especificaciones Técnicas & Materialidad</p>
+        </div>
+        <button id="closeModelModal" class="modal-close-btn" aria-label="Cerrar ventana">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <div class="modal-photo-wrap">
+            <img id="modalImg" src="" alt="Fotografía del modelo" />
+          </div>
+          <ul id="modalFeatures" class="modal-features-list"></ul>
+        </div>
+
+        <div class="modal-specs-table">
+          <div class="modal-spec-row">
+            <span>Superficie Útil:</span>
+            <strong id="modalArea"></strong>
+          </div>
+          <div class="modal-spec-row">
+            <span>Terreno Recomendado:</span>
+            <strong id="modalTerreno"></strong>
+          </div>
+          <div class="modal-spec-row">
+            <span>Programa Arquitectónico:</span>
+            <strong id="modalDistribucion"></strong>
+          </div>
+          <div class="modal-spec-row">
+            <span>Estructura & Materialidad:</span>
+            <strong id="modalMateriales"></strong>
+          </div>
+          <div class="modal-spec-row">
+            <span>Aislamiento & Climatización:</span>
+            <strong id="modalClimatizacion"></strong>
+          </div>
+          <div class="modal-spec-row">
+            <span>Plazo de Ejecución:</span>
+            <strong id="modalPlazo"></strong>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="modal-inversion-badge">
+          <span>Inversión Estimada Llave en Mano</span>
+          <strong id="modalInversion"></strong>
+        </div>
+        <button id="modalQuoteBtn" class="btn-primary">
+          <span>Solicitar Cotización de este Modelo</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Lightbox Modal for Gallery -->
+  <div id="galleryLightbox" class="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-overlay"></div>
+    <button id="closeLightbox" class="lightbox-close" aria-label="Cerrar imagen">&times;</button>
+    <button id="prevLightbox" class="lightbox-arrow prev" aria-label="Imagen anterior">&#10094;</button>
+    <button id="nextLightbox" class="lightbox-arrow next" aria-label="Siguiente imagen">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Vista ampliada de obra" />
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Interactive JavaScript Controller -->
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
